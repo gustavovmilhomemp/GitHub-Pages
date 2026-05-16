@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Votação</title>
+
+<style>
+body{
+    font-family:Arial;
+    text-align:center;
+    background:#f0f0f0;
+    padding-top:100px;
+}
+
+button{
+    width:200px;
+    height:60px;
+    margin:10px;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Sistema de Votação</h1>
+
+<button onclick="voto('Candidato 1')">Candidato 1</button>
+<button onclick="voto('Candidato 2')">Candidato 2</button>
+
+<br>
+
+<button onclick="voto('Branco')">Branco</button>
+<button onclick="voto('Nulo')">Nulo</button>
+
+<script>
+function voto(tipo){
+    alert("Voto em " + tipo + " registrado!");
+}
+</script>
+
+</body>
+</html>
